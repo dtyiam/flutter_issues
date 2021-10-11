@@ -1,0 +1,9 @@
+①。Flutter could not find tools.jar
+    ⭐️ error log
+        AILURE: Build failed with an exception.
+        * What went wrong:
+        Execution failed for task ':path_provider:compileDebugJavaWithJavac'.
+        > Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.
+     ⭐️ resolve
+         - Go to your android folder > Gradle.properties > add your jdk path.
+         - Clean and rebuild then it's done.

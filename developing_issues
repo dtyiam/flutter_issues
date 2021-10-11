@@ -11,3 +11,17 @@
          - Clean and rebuild then it's done.
      ⭐️ resolve_02
          - add export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home into ~/.bash_profile
+     
+ ②。Flutter-Unable to find bundled Java version(flutter doctor)
+     ⭐️error log
+         Flutter-Unable to find bundled Java version(flutter doctor)
+     ⭐️the reason 
+         - can not find jdk in android studio
+     ⭐️resolve
+         - set JAVA_HOME in ~/.bash_profile and ~/.zshrc file
+             export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
+         - source ~/.bash_profile or  ~/.zshrc
+         - cd /Applications/Android\ Studio.app/Contents/jre
+         ln -s ../jre jdk
+         ln -s "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin" jdk
+         flutter doctor -v

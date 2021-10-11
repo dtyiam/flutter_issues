@@ -4,6 +4,10 @@
         * What went wrong:
         Execution failed for task ':path_provider:compileDebugJavaWithJavac'.
         > Could not find tools.jar. Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.
-     ⭐️ resolve
+     ⭐️ the reason
+         - lack of java jdk
+     ⭐️ resolve_01
          - Go to your android folder > Gradle.properties > add your jdk path.
          - Clean and rebuild then it's done.
+     ⭐️ resolve_02
+         - add export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home into ~/.bash_profile
